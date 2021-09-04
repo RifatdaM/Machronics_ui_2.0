@@ -1,0 +1,10 @@
+/* ./src/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google font Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/* Custom CSS */
