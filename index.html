@@ -179,7 +179,7 @@
           </div>
         </div>
         <!-- img -->
-        <div class="flex justify-center flex-1 mb-10 md:mb-4 lg:mb-0 z-10">
+        <div class="flex justify-end flex-1 mb-10 md:mb-4 lg:mb-0 z-10">
           <img
             class="
               w-5/6
@@ -189,28 +189,11 @@
               lg:w-5/6
               2xl:h-auto
             "
-            src="public/img/hero.svg"
+            src="public/img/hero-2.svg"
             alt=""
           />
         </div>
       </div>
-      <!-- hero background container -->
-      <div
-        class="
-          hidden
-          lg:block
-          overflow-hidden
-          bg-mRed
-          rounded-l-full
-          absolute
-          h-60
-          w-1/2
-          lg:w-5/12 lg:h-80
-          top-32
-          right-0
-          lg:-bottom-48
-        "
-      ></div>
     </section>
 
     <!-- We Provide -->
@@ -596,68 +579,385 @@
       </div>
 
       <!-- card -->
-      <div class="bg-white">
+      <div class="container mt-20">
+        <!-- amount of product will be shown -->
         <div
           class="
-            max-w-2xl
-            mx-auto
-            py-16
-            px-4
-            sm:py-24 sm:px-6
-            lg:max-w-7xl lg:px-8
+            grid grid-cols-1
+            md:grid-cols-2
+            lg:grid-cols-3
+            2xl:grid-cols-4
+            gap-6
           "
         >
-          <div
-            class="
-              mt-6
-              grid grid-cols-1
-              gap-y-10 gap-x-6
-              sm:grid-cols-2
-              lg:grid-cols-4
-              xl:gap-x-8
-            "
-          >
-            <div class="group relative">
+          <!-- single product card -->
+          <div class="bg-white shadow rounded overflow-hidden">
+            <!-- Image -->
+            <div class="relative">
+              <img src="./public/img/img-1.jpg" class="w-full" alt="" />
+              <!-- wishlist and discount -->
               <div
                 class="
-                  w-full
-                  min-h-80
-                  bg-gray-200
-                  aspect-w-1 aspect-h-1
-                  rounded-md
-                  overflow-hidden
-                  group-hover:opacity-75
-                  lg:h-80 lg:aspect-none
+                  absolute
+                  inset-0
+                  mt-4
+                  items-start
+                  flex flex-auto
+                  justify-between
                 "
               >
-                <img
-                  src="./public/img/img-1.jpg"
-                  alt="Front of men&#039;s Basic Tee in black."
+                <!-- wishlist -->
+                <a
+                  href=""
                   class="
-                    w-full
-                    h-full
-                    object-center object-cover
-                    lg:w-full lg:h-full
+                    text-lg text-white
+                    w-9
+                    h-9
+                    bg-mRed
+                    flex
+                    items-center
+                    justify-center
                   "
-                />
-              </div>
-              <div class="mt-4 flex justify-between">
-                <div>
-                  <h3 class="text-sm text-gray-700">
-                    <a href="#">
-                      <span aria-hidden="true" class="absolute inset-0"></span>
-                      Basic Tee
-                    </a>
-                  </h3>
-                  <p class="mt-1 text-sm text-gray-500">Black</p>
-                </div>
-                <p class="text-sm font-medium text-gray-900">$35</p>
+                >
+                  <i class="far fa-heart"></i>
+                </a>
+                <!-- discount -->
+                <p
+                  class="
+                    text-lg text-white
+                    bg-mRed
+                    flex
+                    py-1
+                    px-2
+                    items-center
+                    justify-center
+                  "
+                >
+                  40%
+                </p>
               </div>
             </div>
-
-            <!-- More products... -->
+            <!-- content -->
+            <!-- caragoty and product name -->
+            <div class="pt-4 pb-3 px-4">
+              <p class="text-xs text-gray-500">3D Printed lamp</p>
+              <h4 class="uppercase font-Bebas text-gray-800 text-3xl">
+                Product Name
+              </h4>
+              <!-- reating -->
+              <div class="flex pt-2 items-baseline space-x-2">
+                <i class="fas fa-star text-mRed"></i>
+                <i class="fas fa-star text-mRed"></i>
+                <i class="fas fa-star text-mRed"></i>
+                <i class="far fa-star text-mRed"></i>
+                <i class="far fa-star text-mRed"></i>
+                <p class="text-sm text-gray-500">(90)</p>
+              </div>
+              <!-- price -->
+              <div class="flex justify-between pt-6">
+                <p class="text-base">1,000 BTD</p>
+                <p class="text-base text-gray-400 line-through">1,500 BDT</p>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="
+                block
+                w-full
+                py-2
+                text-mRed
+                border-2 border-mRed
+                hover:bg-mRed hover:text-white
+                uppercase
+                font-medium
+                transition
+              "
+            >
+              Add to cart
+            </button>
+          </div>
+          <!-- single product card -->
+          <div class="bg-white shadow rounded overflow-hidden">
+            <!-- Image -->
+            <div class="relative">
+              <img src="./public/img/img-1.jpg" class="w-full" alt="" />
+              <!-- wishlist and discount -->
+              <div
+                class="
+                  absolute
+                  inset-0
+                  mt-4
+                  items-start
+                  flex flex-auto
+                  justify-between
+                "
+              >
+                <!-- wishlist -->
+                <a
+                  href=""
+                  class="
+                    text-lg text-white
+                    w-9
+                    h-9
+                    bg-mRed
+                    flex
+                    items-center
+                    justify-center
+                  "
+                >
+                  <i class="far fa-heart"></i>
+                </a>
+                <!-- discount -->
+                <p
+                  class="
+                    text-lg text-white
+                    bg-mRed
+                    flex
+                    py-1
+                    px-2
+                    items-center
+                    justify-center
+                  "
+                >
+                  40%
+                </p>
+              </div>
+            </div>
+            <!-- content -->
+            <!-- caragoty and product name -->
+            <div class="pt-4 pb-3 px-4">
+              <p class="text-xs text-gray-500">3D Printed lamp</p>
+              <h4 class="uppercase font-Bebas text-gray-800 text-3xl">
+                Product Name
+              </h4>
+              <!-- reating -->
+              <div class="flex pt-2 items-baseline space-x-2">
+                <i class="fas fa-star text-mRed"></i>
+                <i class="fas fa-star text-mRed"></i>
+                <i class="fas fa-star text-mRed"></i>
+                <i class="far fa-star text-mRed"></i>
+                <i class="far fa-star text-mRed"></i>
+                <p class="text-sm text-gray-500">(90)</p>
+              </div>
+              <!-- price -->
+              <div class="flex justify-between pt-6">
+                <p class="text-base">1,000 BTD</p>
+                <p class="text-base text-gray-400 line-through">1,500 BDT</p>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="
+                block
+                w-full
+                py-2
+                text-mRed
+                border-2 border-mRed
+                hover:bg-mRed hover:text-white
+                uppercase
+                font-medium
+                transition
+              "
+            >
+              Add to cart
+            </button>
+          </div>
+          <!-- single product card -->
+          <div class="bg-white shadow rounded overflow-hidden">
+            <!-- Image -->
+            <div class="relative">
+              <img src="./public/img/img-1.jpg" class="w-full" alt="" />
+              <!-- wishlist and discount -->
+              <div
+                class="
+                  absolute
+                  inset-0
+                  mt-4
+                  items-start
+                  flex flex-auto
+                  justify-between
+                "
+              >
+                <!-- wishlist -->
+                <a
+                  href=""
+                  class="
+                    text-lg text-white
+                    w-9
+                    h-9
+                    bg-mRed
+                    flex
+                    items-center
+                    justify-center
+                  "
+                >
+                  <i class="far fa-heart"></i>
+                </a>
+                <!-- discount -->
+                <p
+                  class="
+                    text-lg text-white
+                    bg-mRed
+                    flex
+                    py-1
+                    px-2
+                    items-center
+                    justify-center
+                  "
+                >
+                  40%
+                </p>
+              </div>
+            </div>
+            <!-- content -->
+            <!-- caragoty and product name -->
+            <div class="pt-4 pb-3 px-4">
+              <p class="text-xs text-gray-500">3D Printed lamp</p>
+              <h4 class="uppercase font-Bebas text-gray-800 text-3xl">
+                Product Name
+              </h4>
+              <!-- reating -->
+              <div class="flex pt-2 items-baseline space-x-2">
+                <i class="fas fa-star text-mRed"></i>
+                <i class="fas fa-star text-mRed"></i>
+                <i class="fas fa-star text-mRed"></i>
+                <i class="far fa-star text-mRed"></i>
+                <i class="far fa-star text-mRed"></i>
+                <p class="text-sm text-gray-500">(90)</p>
+              </div>
+              <!-- price -->
+              <div class="flex justify-between pt-6">
+                <p class="text-base">1,000 BTD</p>
+                <p class="text-base text-gray-400 line-through">1,500 BDT</p>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="
+                block
+                w-full
+                py-2
+                text-mRed
+                border-2 border-mRed
+                hover:bg-mRed hover:text-white
+                uppercase
+                font-medium
+                transition
+              "
+            >
+              Add to cart
+            </button>
+          </div>
+          <!-- single product card -->
+          <div class="bg-white shadow rounded overflow-hidden">
+            <!-- Image -->
+            <div class="relative">
+              <img src="./public/img/img-1.jpg" class="w-full" alt="" />
+              <!-- wishlist and discount -->
+              <div
+                class="
+                  absolute
+                  inset-0
+                  mt-4
+                  items-start
+                  flex flex-auto
+                  justify-between
+                "
+              >
+                <!-- wishlist -->
+                <a
+                  href=""
+                  class="
+                    text-lg text-white
+                    w-9
+                    h-9
+                    bg-mRed
+                    flex
+                    items-center
+                    justify-center
+                  "
+                >
+                  <i class="far fa-heart"></i>
+                </a>
+                <!-- discount -->
+                <p
+                  class="
+                    text-lg text-white
+                    bg-mRed
+                    flex
+                    py-1
+                    px-2
+                    items-center
+                    justify-center
+                  "
+                >
+                  40%
+                </p>
+              </div>
+            </div>
+            <!-- content -->
+            <!-- caragoty and product name -->
+            <div class="pt-4 pb-3 px-4">
+              <p class="text-xs text-gray-500">3D Printed lamp</p>
+              <h4 class="uppercase font-Bebas text-gray-800 text-3xl">
+                Product Name
+              </h4>
+              <!-- reating -->
+              <div class="flex pt-2 items-baseline space-x-2">
+                <i class="fas fa-star text-mRed"></i>
+                <i class="fas fa-star text-mRed"></i>
+                <i class="fas fa-star text-mRed"></i>
+                <i class="far fa-star text-mRed"></i>
+                <i class="far fa-star text-mRed"></i>
+                <p class="text-sm text-gray-500">(90)</p>
+              </div>
+              <!-- price -->
+              <div class="flex justify-between pt-6">
+                <p class="text-base">1,000 BTD</p>
+                <p class="text-base text-gray-400 line-through">1,500 BDT</p>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="
+                block
+                w-full
+                py-2
+                text-mRed
+                border-2 border-mRed
+                hover:bg-mRed hover:text-white
+                uppercase
+                font-medium
+                transition
+              "
+            >
+              Add to cart
+            </button>
           </div>
         </div>
+      </div>
+      <div class="mt-10 flex items-center justify-center">
+        <button
+          type="button"
+          class="
+            bg-mRed
+            text-white
+            rounded-md
+            px-7
+            py-3
+            transition
+            transform
+            duration-300
+            ease-in-out
+            hover:bg-mRed-hover hover:shadow hover:-translate-y-0.5
+            active:bg-mRed active:translate-y-0
+            uppercase
+            font-semibold
+            outline-none
+          "
+        >
+          Shop More
+        </button>
       </div>
     </section>
   </body>
